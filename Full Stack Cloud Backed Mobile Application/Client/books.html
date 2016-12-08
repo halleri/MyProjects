@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Take Picture and Add Book to Database</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+
+<!-- Setting the right viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <script type="text/javascript" src="js/script.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+
+
+  </head>
+  <body>
+
+
+    <button onclick="capturePhoto();">Take Photo</button> <br>
+    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    <img style="display:none;" id="largeImage" src="" />
+
+
+
+<div id="add" >
+<form>
+  <div class="form-group">
+    <label for="title">Book Title: </label>
+    <input class="form-control"  type="text" name="title">
+  </div>
+
+  <input type="hidden" value="" name="key" />
+</form>
+<button id="addButton" type="submit" onClick="to_add()">Add Book</button><button id="deleteButton" class="hidden" type="submit" onClick="to_delete()">Delete Book</button>
+</div>
+
+
+
+  </div><!-- /content --> 
+
+
+
+  </body>
+</html>
+
