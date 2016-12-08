@@ -1,0 +1,7 @@
+compile: ftserver 
+
+ftserver: ftserver.cpp
+		g++ -o ftserver ftserver.cpp
+
+clean:
+	$(RM) *.o ftserver ftclient
