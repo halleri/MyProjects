@@ -1,7 +1,0 @@
-{
-  "name": "Real Time Chat",
-  "short_name": "Real Time Chat",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "orientation": "portrait"
-}
