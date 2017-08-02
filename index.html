@@ -1,0 +1,29 @@
+
+<!doctype html>
+<head>
+  <title>Real Time Chat</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body onload = "load()">
+  <header class="header">
+        <h3> Real Time Chat</h3>
+        <button hidden id="sign-out" button class="sign-out-button"> Sign-out </button>
+        <button hidden id="sign-in" class="">
+          <i></i>Sign-in</button>
+  </header>
+
+<div id="chatbox">
+          <div id="messages">
+          </div>
+          <form id="message-form" action="#">
+              <input type="text" id="message">
+              <label for="message">Type message here...</label>
+            <button id="submit" button class="button"> Send </button>
+          </form>
+
+    </div>
+<script src="/__/firebase/4.1.3/firebase.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
